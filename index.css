@@ -57,8 +57,6 @@ h1:hover{
     align-items: center;
     margin: 9% 0;
 }
-#video{
-}
 #youtube{
     border: 5px var(--green) solid;
 }
@@ -75,9 +73,22 @@ h1:hover{
     transition: all 0.4s;
     transition-delay: 0.05s;
 }
+iframe{
+    width: 480; 
+    height: 288;
+}
 p{
     font-size: 40px;
     margin: 1% 5%;
+}
+p a{
+    color: var(--green);
+    text-decoration: none;
+}
+p a:hover{
+    color: #10eeb7;
+    transition-delay: all 0.2s;
+    transition: all 0.6s;
 }
 @media only screen and (max-width: 390px){
     header{
@@ -90,5 +101,19 @@ p{
         margin-top: -5%;
         width: 97%;
         border-color: var(--green);
+    }
+    .uploads{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 9% 0;
+    }
+    iframe{
+        width: 280; 
+        height: 157.5;
+    }
+    #podcast{
+        border: 5px var(--red) solid;
+        margin: 5% 0 0 0;
     }
 }
