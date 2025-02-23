@@ -1,0 +1,94 @@
+:root{
+    --green: #17B890;
+    --red: #D33F49;
+    --black: #090C08;
+}
+@font-face {
+    font-family: "Alexandria";
+    src: url(fonts/Alexandria-Medium.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Alexandria";
+    src: url(fonts/Alexandria-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Alexandria";
+    src: url(fonts/Alexandria-Bold.ttf);
+    font-weight: bold;
+}
+html{
+    background-image: linear-gradient(var(--black), #05271e);
+    color: var(--green);
+    text-align: center;
+    scrollbar-width: none;
+    font-family: Alexandria;
+    font-weight: 600;
+}
+header{
+    margin-top: 1%;
+    font-size: 20px;
+}
+header img{
+    height: 3.5%;
+    margin: -2px 11px;
+}
+header hr{
+    margin-top: -0.5%;
+    width: 97%;
+    border-color: var(--green);
+}
+header a{
+    color: var(--green);
+    text-decoration: none;
+}
+header a:hover{
+    color: #0edaa7;
+}
+h1:hover{
+    transition-delay: all 0.2s;
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
+.uploads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 9% 0;
+}
+#video{
+}
+#youtube{
+    border: 5px var(--green) solid;
+}
+#youtube:hover{
+    box-shadow: #17B890bb 0 0 25px;
+    transition: all 0.4s;
+    transition-delay: 0.05s;
+}
+#podcast{
+    border: 5px var(--red) solid;
+}
+#podcast:hover{
+    box-shadow: #D33F49dd 0 0 25px;
+    transition: all 0.4s;
+    transition-delay: 0.05s;
+}
+p{
+    font-size: 40px;
+    margin: 1% 5%;
+}
+@media only screen and (max-width: 390px){
+    header{
+        margin-top: 5%;
+    }
+    header img{
+        height: 3.75%;
+    }
+    header hr{
+        margin-top: -5%;
+        width: 97%;
+        border-color: var(--green);
+    }
+}
